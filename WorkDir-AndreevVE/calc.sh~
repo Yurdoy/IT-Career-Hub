@@ -1,0 +1,17 @@
+#!/bin/bash
+read -p "2 + 2 " FORM
+echo $FORM | 
+awk '  
+    {
+  if ($2 == "+")  resalt += $1 + $3;
+     else
+      if ($2 == "-") resalt += $1 - $3;
+       else 
+        if ($2 == "/") resalt += $1/$3;
+         else 
+           resalt += $1 * $3;
+    } 
+    END { 
+     print ($1, $2, $3, "=", resalt);
+    }'
+

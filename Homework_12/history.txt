@@ -1,0 +1,351 @@
+    1  git config --global -l
+    2  git config --global -l
+    3  git config --global -l
+    4  git config --global Yuriy.Doychev
+    5  git config --global Yuriy.yurdoy@gmail.com
+    6  git config --global -l
+    7  git config --global -l
+    8  git config --global Yuriy.Doychev
+    9  git config --global Yuriy.yurdoy@gmail.com
+   10  git config --global -l
+   11  git config --global -l
+   12  git config --global user.name Yuriy.Doychev
+   13  git config --global user.email Yuriy.yurdoy@gmail.com
+   14  git config --global -l
+   15  mkdir 151223-wde
+   16  ls -la
+   17  cd 151223-wde
+   18  echo "Test 151223-wde" >> README.md
+   19  ls -la
+   20  cat README.md
+   21  git init
+   22  ls -la
+   23  git status
+   24  git add .
+   25  git status
+   26  git commit -m "Add README.md"
+   27  git status
+   28  git log
+   29  rm -rf READMR.md
+   30  ls -la
+   31  rm -rf README.md
+   32  ls -la
+   33  git status
+   34  git restore README.md
+   35  git status
+   36  ls -la
+   37  git remote add origin https://github.com/Yurdoy/151223-wd.git
+   38  git remote -v
+   39  git push -u origin main
+   40  cd ..
+   41  git clone git@github.com:Yurdoy/Test.git
+   42  ls -la
+   43  cd Test
+   44  ls -la
+   45  cat README.md
+   46  cd ..
+   47  cd 151223-wde
+   48  ls -la
+   49  cd .git
+   50  ls -la
+   51  cd ..
+   52  nano song.txt
+   53  git status
+   54  git add song.txt
+   55  git status
+   56  git commit -m "Add file song.txt"
+   57  git log
+   58  git status
+   59  nano song.txt
+   60  git status
+   61  git commit -am "Edit-1 song.txt"
+   62  git log
+   63  git push
+   64  git log
+   65  git pull
+   66  git log
+   67  git log
+   68  pwd
+   69  ls -al
+   70  cd iCloudDrive
+   71  ls -al
+   72  cd Documents
+   73  ls -al
+   74  ls -al
+   75  git init
+   76  git add git-branch
+   77  git init git-branch
+   78  git branch gitignore
+   79  git branch
+   80  git status
+   81  git commit
+   82  git add
+   83  git status
+   84  git add 151223-wde
+   85  git rm --cached 151223-wde
+   86  git status
+   87  git add Test/
+   88  git status
+   89  git add Tgit-branch/
+   90  git status
+   91  git add git-branch/
+   92  git status
+   93  git add git-branch
+   94  git status
+   95  git add git-intro/
+   96  git add git-intro
+   97  git status
+   98  git commit
+   99  git commit -m "Added again after SSD rearrengement"
+  100  git status
+  101  git branch
+  102  git branch gitignore
+  103  git branch
+  104  git checkot gitignore
+  105  git checkout gitignore
+  106  git branch
+  107  nano gitignore.txt
+  108  git status
+  109  git commit -m "Homework_10"
+  110  git add gitignore.txt
+  111  git commit -m "Homework_10"
+  112  git remote add origin git@github.com:Yurdoy/git-branch.git
+  113  git status
+  114  git push -u gitignore
+  115  ls -la
+  116  cd git-branch
+  117  ls -la
+  118  cd ..
+  119  ls -la
+  120  cd 151223-wde
+  121  ls -la
+  122  cd ..
+  123  ls -la
+  124  cd git-branch
+  125  ls -la
+  126  cd ..
+  127  ls -la
+  128  cd 151223-wde
+  129  ls -la
+  130  git branch -d gitignore
+  131  git branch -d .gitignore
+  132  ls -la
+  133  git branch
+  134  git checkout git-branch
+  135  cd ..
+  136  git checkout git-branch
+  137  ls -la
+  138  git branch
+  139  mv gitignore.txt /git-branch
+  140  git status
+  141  cd git-branch
+  142  nano gitignore.txt
+  143  ls -al
+  144  git status
+  145  git add gitignore.txt
+  146  git commit -m "Homework_10"
+  147  git remote add origin git@github.com:Yurdoy/git-branch.git
+  148  git push -u origin gitignore
+  149  git status
+  150  git branch
+  151  git checkout git-branch
+  152  git branch
+  153  git branch gitignore
+  154  git branch
+  155  git checkout gitignore
+  156  git branch
+  157  ls -la
+  158  git status
+  159  cat gitignore.txt
+  160  git log
+  161  nano gitignore.txt
+  162  git push -u origin gitignore
+  163  git status
+  164  git log
+  165  git add gitignore.txt
+  166  git status
+  167  nano gitignore.txt
+  168  nano gitignore.txt
+  169  git status
+  170  git commit -m "Corrected homework_10"
+  171  git add gitignore.txt
+  172  git commit -m "Corrected homework_10"
+  173  git push -u origin gitignore
+  174  git status
+  175  git log
+  176  pwd
+  177  ls -al
+  178  cd iCloudDrive
+  179  ls -al
+  180  cd Document
+  181  cd Documents
+  182  ls -al
+  183  cd Education
+  184  ls -al
+  185  cd ITCareerhub
+  186  ls -al
+  187  ls -al
+  188  cd 151223-wde
+  189  ls -al
+  190  git status
+  191  git branch
+  192  git merge feature1
+  193  git status
+  194  git commit -m
+  195  git commit -m "Changes applied"
+  196  git add song.txt
+  197  git status
+  198  git commit -m "Changes applied"
+  199  git status
+  200  git merge feature1
+  201  git log --oneline --graph --decorate --all
+  202  git checkout feature1
+  203  git branch
+  204  ls -al
+  205  cat file1.txt
+  206  echo " Test in branch feature1" >> file1.txt
+  207  git status
+  208  git commit -m "Modified file1.txt
+  209  git commit -m "Modified file1.txt"
+  210  git add file1.txt
+  211  git add bashscripts
+  212  git status
+  213  git commit -m "Modified file1.txt"
+  214  git status
+  215  git log --oneline --graph --decorate --all
+  216  nano file1.txt
+  217  git commit -am "Modified file1.txt"
+  218  git checkout main
+  219  git branch
+  220  ls -al
+  221  nano file1.txt
+  222  git commit -am "Modified file1.txt in main"
+  223  git merge feature1
+  224  nano file1.txt
+  225  git status
+  226  git commit -am "merge co
+  227  git log --oneline --graph --decorate --all
+  228  echo "New text" >> file2.txt
+  229  git status
+  230  git add file2.txt
+  231  git commit -m file2.txt
+  232  git log
+  233  git log --oneline --graph --decorate --all
+  234  git rebase feature1
+  235  git log --oneline --graph --decorate --all
+  236  ls -al
+  237  git branch -v
+  238  git checkout main
+  239  cat file1.txt
+  240  cat song.txt
+  241  git status
+  242  git restore --staged song.txt
+  243  git status
+  244  nano song.txt
+  245  git status
+  246  git log --oneline --graph --decorate --all
+  247  git status
+  248  git restore --staged error.log
+  249  git status
+  250  git add error.log
+  251  git status
+  252  git commit -m
+  253  git commit -m error.log
+  254  git status
+  255  git branch main
+  256  git checkout main
+  257  git rebase feature1
+  258  git rebase --abort
+  259  git status
+  260  git rebase feature1
+  261  git rebase --abort
+  262  git status
+  263  git branch -D feature1
+  264  git log --oneline --graph --decorate --all
+  265  git checkout -b feature
+  266  ls -al
+  267  nano file1.txt
+  268  git checkout main
+  269  ls -al
+  270  nano file2.txt
+  271  git commit -am "Edit file 2"
+  272  git rebase feature
+  273  git checkout feature
+  274  nano file2.txt
+  275  ls -al
+  276  nano file1.txt
+  277  git log --oneline --graph --decorate --all
+  278  git rebase main
+  279  git log --oneline --graph --decorate --all
+  280  cat file1.txt
+  281  cat file2.txt
+  282  git checkout main
+  283  cat file1.txt
+  284  cat file2.txt
+  285  git rebase -i HEAD -4
+  286  git rebase -i HEAD-4
+  287  git rebase -i HEAD 4
+  288  git rebase -i HEAD -4
+  289  git rebase -i HEAD~4
+  290  git rebase -i HEAD~4
+  291  git rebase -i HEAD~4
+  292  git rebase --skip
+  293  git rebase -i HEAD~4
+  294  git log --oneline --graph --decorate --all
+  295  git show 728f66c
+  296  git reset 728f66c
+  297  git log --oneline --graph --decorate --all
+  298  git status
+  299  git checkout song.txt
+  300  git status
+  301  git remote -v
+  302  git config --global user.email "yurdoy@gmail.com"
+  303  git status
+  304  git log --oneline --graph --decorate --all
+  305  git log --oneline --graph --decorate --all
+  306  ls -la
+  307  git checkput main
+  308  git branch
+  309  git checkout main
+  310  git branch
+  311  rm -r 151223-wde
+  312  ls -la
+  313  ls -la
+  314  git clone git@github.com:Yurdoy/151223-wd.git
+  315  ls -la
+  316  cd 151223-wde
+  317  cd 151223-wd
+  318  ls -la
+  319  git log
+  320  git status
+  321  cd
+  322  ls -la
+  323  ls -la
+  324  git clone 200~git@github.com:Yurdoy/Homework_12.git
+  325  git clone git@github.com:Yurdoy/Homework_12.git
+  326  ls -la
+  327  cd Homework_12
+  328  ls -la
+  329  git checkout -b feature
+  330  git branch
+  331  ls -la
+  332  nano README.md
+  333  nano .gitignore
+  334  git status
+  335  git add README.md
+  336  git add .gitignore
+  337  git status
+  338  git commit -m "Files README.md and .gitignore have been hanched as per Task 3 in Homework 12"
+  339  git status
+  340  git log
+  341  git push -u origin feature
+  342  git log
+  343  git commit --amend
+  344  git status
+  345  git log
+  346  git log --oneline 
+  347  git checkout main
+  348  git branch
+  349  git merge feature
+  350  hystory > history.txt
+  351  history > history.txt
