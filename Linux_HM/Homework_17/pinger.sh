@@ -1,39 +1,27 @@
 #!/bin/bash
 
-#Написать скрипт, который будет бесконечно пинговать указанный адрес 
-#(переменная или ввод пользователя) с интервалом 1 секунда между попытками. 
-#Если время пинга превышает 100 мс или не удается выполнить пинг 
-#в течение 3 последовательных отправок пакетов, скрипт просто выведет сообщения об этом. 
-
-pingCheck() {
-
-read -p "Enter ping address: " address
-
-timeout=3
+address=google.com
 count=0
 
-	while true; 
-		do
-			ping $address
-			sleep 1
-	done
+while :
+do
+    if ping -c 1 $address;
+	then
+        count=0
+        time=$(ping -c 1 $address)
+        
+        if (( $(echo $time > 100 | bc -l) ));
+	then
+            echo "Ping time to $address is over 100ms: $time ms"
+        fi
+    else
+        ((count++))
+        if [ $count -eq 3 ];
+	then
+            echo "Failed to ping $address for 3 attempts."
+            exit 1
+        fi
+    fi
 
-pingResult=$(ping $count $address)
-
-	if [[ $pingResult =~ "100% packet loss" ]];
-		then
-			echo "Unable to perform ping"
-		elif [[ $pingResult =~ "ms" ]];
-			then
-				echo "Responding time more then 100ms"
-			else 
-				echo "Ping performed successfuly"
-	fi
-
-}
-
-pingCheck
-
-
-
-
+    sleep 1
+done

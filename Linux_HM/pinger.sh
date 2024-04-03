@@ -1,4 +1,4 @@
-#1/bin/bash
+#!/bin/bash
 # Функция для выполнения пинга
 perform_ping()
 #address=$1
